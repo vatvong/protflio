@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    :root{
+        --bg1-color: rgb(171, 12, 12);
+        --bg2-color: rgb(46, 157, 159);
+        --bg3-color: rgb(143, 110, 55);
+        --bg4-color: rgb(242, 230, 230);
+    }
+    main{
+        display: grid;
+        gap: 10px;
+        padding: 10px;
+        background-color: #333;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 200px 200px 200px 200px;
+    }
+    .box1{
+        background-color: var(--bg1-color);
+        grid-row: 1 / span 2; 
+    }
+    .box2{
+        background-color: var(--bg2-color);
+        grid-column: span 2;
+    }
+    .box3{
+        background-color: var(--bg3-color);
+        grid-column: span 2 ; 
+    }
+    .box4{
+        background-color: var(--bg3-color);
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+    .box5{
+        background-color: var(--bg4-color);
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .box6{
+        background-color: var(--bg1-color);
+        grid-row: span 3;
+    }
+    .box7{
+        background-color: var(--bg4-color);
+        grid-row: span 2;
+    }
+    .box8{
+        background-color: var(--bg1-color);
+        grid-column: span 2;
+    }
+    .box9{
+        background-color: var(--bg2-color);
+        grid-row: span 1;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </main>
+</body>
+</html>
